@@ -1,0 +1,144 @@
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	background: #a8a8b5;
+	background: url('../img/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Open Sans, Arial sans-serif;
+	font-size: 14px;
+	color: #9a9ea5;
+}
+.container{
+	width: 700px;
+	height: 395px;
+	border-radius: 10px;
+	background: #111a28;
+	margin: 0 auto;
+	margin-top: 120px; 
+	box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+.header__logo{
+	position: absolute;
+	top: 25px;
+	left: 25px;
+}
+.card__img{
+	position: absolute;
+	top: 120px;
+	left: 35px;
+}
+.card__colors{
+	list-style: none;
+	position: absolute;
+	top: 350px;
+	left: 175px;
+}
+.card__color{
+	display: inline-block;
+	margin-right: 3px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	border: 3px solid #111a28;
+}
+.card__color--grey{
+	width: 13px;
+	height: 13px;
+	background: #1f273f;
+	border: 2px solid #7e838b;
+}
+.card__color--white{
+	background: #fff;
+}
+.card__color--red{
+	background: #ed3333;
+}
+.card__color--green{
+	background: #29e3ea;
+}
+.card__color:hover{
+	border: 2px solid #7e838b;
+	cursor: pointer;
+}
+
+.card__info{
+	float: right;
+	width: 300px;
+	padding: 60px 35px;
+}
+.card__title{
+	font-weight: 100;
+}
+.card__subtitle{
+	color: #72757b;
+}
+ 
+.card__stars{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+.card__star{
+	display: inline-block;
+}
+i{
+	color: #f7bf16;
+}
+.card__stars[data-stars="1"] .card__star:nth-of-type(n+2) i{
+	color: #9da1a6;
+
+}
+.card__stars[data-stars="2"] .card__star:nth-of-type(n+3) i{
+	color: #9da1a6;
+
+}
+.card__stars[data-stars="3"] .card__star:nth-of-type(n+4) i{
+	color: #9da1a6;
+
+}
+.card__stars[data-stars="4"] .card__star:nth-of-type(n+5) i{
+	color: #9da1a6;
+}
+
+.card__size,
+.card__qty,
+.card__add{
+	background: #111a28;
+	border: 1px solid #72757b;
+	color: #9a9ea5;
+	outline: none;
+}
+.card__size,
+.card__qty{
+	width: 70px;
+	height: 32px;
+}
+.card__add{
+	width: 185px;
+	height: 40px;
+	margin-top: 30px;
+	background: #202835;
+}
+
+.card__size:focus,
+.card__qty:focus,
+.card__add:focus{
+	border: 1px solid #f7bf16;
+}
+
+.card__add:hover,
+.card__add:active{
+	background: #9a9ea5;
+	color: #111a28;
+	font-weight: bold;
+	cursor: pointer;
+}
